@@ -8,9 +8,9 @@ from urllib.parse import quote_plus
 from flask_cors import CORS
 
 
-username = os.getenv("username")
-password = os.getenv("password")
-url_db = os.getenv("mongo_db_url")
+username = os.getenv("USERNAME")
+password = os.getenv("PASSWORD")
+url_db = os.getenv("MONGO_DB_URL")
 
 username_escaped = quote_plus(username)
 password_escaped = quote_plus(password)
