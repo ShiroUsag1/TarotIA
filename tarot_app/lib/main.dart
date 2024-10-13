@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'intro_main.dart'; // Importa a tela de introdução
+import 'intro_main.dart';
 
 void main() {
   runApp(MyApp());
@@ -9,7 +9,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: IntroMain(), // Chama a tela de introdução
+      theme: ThemeData(
+        primaryColor: Colors.white,
+        textTheme: TextTheme(
+          bodyMedium: TextStyle(fontFamily: 'Raleway'),
+          bodyLarge: TextStyle(fontFamily: 'Roboto'),
+        ),
+      ),
+      home: IntroMain(),
     );
   }
 }

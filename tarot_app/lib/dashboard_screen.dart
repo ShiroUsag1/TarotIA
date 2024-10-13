@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
+import 'constants_colors.dart';
+import 'package:tarot_app/subpages/ajudaia/ajuda_ia.dart';
+import 'package:tarot_app/subpages/manual/manual.dart';
 // ignore: unused_import
-import 'dart:math';
+import 'dart:math' as math;
+
+import 'subpages/tiragem/tiragem.dart';
 
 class DashboardScreen extends StatefulWidget {
   @override
@@ -15,15 +20,13 @@ class DashboardScreenState extends State<DashboardScreen>
   @override
   void initState() {
     super.initState();
+
     _controller = AnimationController(
       vsync: this,
-      duration: Duration(seconds: 3),
+      duration: Duration(seconds: 2),
     )..repeat(reverse: true);
 
-    // Rotação entre -25 graus (-0.436 radianos) e 25 graus (0.436 radianos)
-    _animation = Tween<double>(begin: -0.436, end: 0.436).animate(
-      CurvedAnimation(parent: _controller, curve: Curves.easeInOut),
-    );
+    _animation = Tween<double>(begin: -10.0, end: 10.0).animate(_controller);
   }
 
   @override
@@ -32,63 +35,108 @@ class DashboardScreenState extends State<DashboardScreen>
     super.dispose();
   }
 
+  Widget _buildTarotCard(
+      String title, String imagePath, bool moveOpposite, VoidCallback onTap) {
+    return GestureDetector(
+      onTap: onTap,
+      child: AnimatedBuilder(
+        animation: _animation,
+        builder: (context, child) {
+          return Transform.translate(
+            offset:
+                Offset(moveOpposite ? -_animation.value : _animation.value, 0),
+            child: Container(
+              width: 200,
+              height: 300,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage(imagePath),
+                  fit: BoxFit.cover,
+                ),
+                borderRadius: BorderRadius.circular(15),
+                border: Border.all(color: Colors.white, width: 3),
+              ),
+              child: Center(
+                child: Text(
+                  title,
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 22,
+                    fontWeight: FontWeight.bold,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+              ),
+            ),
+          );
+        },
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFF1A1A1B), // Fundo da dashboard
+      backgroundColor: ConstColors.dark,
+      appBar: AppBar(
+        backgroundColor: ConstColors.primary,
+        title: RichText(
+          text: TextSpan(
+            children: [
+              TextSpan(
+                text: 'Tarot',
+                style: TextStyle(
+                  fontFamily: 'AlexBrush', // Fonte para a primeira palavra
+                  fontSize: 50,
+                  color: Colors.white,
+                ),
+              ),
+              TextSpan(
+                text: 'IA',
+                style: TextStyle(
+                  fontFamily: 'Roboto', // Fonte para a segunda palavra
+                  fontSize: 20,
+                  color: Colors.white,
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
       body: SingleChildScrollView(
         child: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              SizedBox(height: 50), // Espaçamento inicial opcional
-              _buildTarotCard("Tiragem Aleatória", 'assets/img/tarot1.png'),
+              SizedBox(height: 50),
+              _buildTarotCard(
+                  "Tiragem Aleatória", 'assets/img/tarot1.png', false, () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => TiragemAleatoriaScreen()),
+                );
+              }),
               SizedBox(height: 20),
-              _buildTarotCard("Ajuda da IA", 'assets/img/tarot2.png'),
+              _buildTarotCard("Ajuda da IA", 'assets/img/tarot2.png', true, () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => AjudaIAScreen()),
+                );
+              }),
               SizedBox(height: 20),
-              _buildTarotCard("Manual Das Cartas", 'assets/img/tarot3.png'),
-              SizedBox(height: 50), // Espaçamento final opcional
+              _buildTarotCard(
+                  "Manual Das Cartas", 'assets/img/tarot3.png', false, () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => ManualCartasScreen()),
+                );
+              }),
+              SizedBox(height: 50),
             ],
           ),
         ),
       ),
-    );
-  }
-
-  Widget _buildTarotCard(String title, String imagePath) {
-    return AnimatedBuilder(
-      animation: _animation,
-      builder: (context, child) {
-        return Transform(
-          alignment: Alignment.center,
-          transform: Matrix4.rotationY(_animation.value), // Rotaciona no eixo Y
-          child: Container(
-            width: 200, // Formato de carta de tarot (retangular)
-            height: 300,
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage(
-                    imagePath), // Usa o caminho da imagem passado como parâmetro
-                fit: BoxFit.cover, // Ajusta a imagem para cobrir o container
-              ),
-              borderRadius: BorderRadius.circular(15),
-              border:
-                  Border.all(color: Colors.white, width: 3), // Bordas brancas
-            ),
-            child: Center(
-              child: Text(
-                title,
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 22,
-                  fontWeight: FontWeight.bold,
-                ),
-                textAlign: TextAlign.center,
-              ),
-            ),
-          ),
-        );
-      },
     );
   }
 }

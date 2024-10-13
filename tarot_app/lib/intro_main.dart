@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'constants_colors.dart';
 import 'dashboard_screen.dart'; // Importa a tela principal
 
 class IntroMain extends StatefulWidget {
@@ -25,7 +26,7 @@ class IntroMainState extends State<IntroMain> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.purple,
+      backgroundColor: ConstColors.primary,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
