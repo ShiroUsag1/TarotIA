@@ -3,7 +3,7 @@ import 'dart:typed_data';
 import 'package:flutter/material.dart';
 import 'package:tarot_app/constants_Colors.dart';
 import 'package:tarot_app/models/cartas.dart';
-import 'package:tarot_app/services/api_request.dart';
+import 'package:tarot_app/models/mock_cartas.dart';
 
 class BuscaImagemScreen extends StatefulWidget {
   @override
@@ -11,12 +11,12 @@ class BuscaImagemScreen extends StatefulWidget {
 }
 
 class BuscaImagemScreenState extends State<BuscaImagemScreen> {
-  late Future<List<CartaTarot>> futureCartas;
+  late List<CartaTarot> cartas;
 
   @override
   void initState() {
     super.initState();
-    futureCartas = ApiService().fetchCartas();
+    cartas = mockCartas;
   }
 
   void _showCartaDialog(CartaTarot carta) {
@@ -74,6 +74,7 @@ class BuscaImagemScreenState extends State<BuscaImagemScreen> {
                       "Descrição: ${carta.descricao} \n\n"
                       "Inversâo:${carta.inversao} \n\n"
                       "Tipo: ${carta.tipo} \n\n"
+                      "Naipe ou Elemento: ${carta.naipe} \n\n"
                       "Número: ${carta.numero} \n\n"
                       "Simbolismo: ${carta.simbolismo.join(', ')}",
                       style: TextStyle(
@@ -138,47 +139,28 @@ class BuscaImagemScreenState extends State<BuscaImagemScreen> {
       backgroundColor: ConstColors.primary,
       body: Padding(
         padding: const EdgeInsets.all(16.0),
-        child: FutureBuilder<List<CartaTarot>>(
-          future: futureCartas,
-          builder: (context, snapshot) {
-            if (snapshot.connectionState == ConnectionState.waiting) {
-              return Center(child: CircularProgressIndicator());
-            } else if (snapshot.hasError) {
-              return Center(child: Text('Erro: ${snapshot.error}'));
-            } else if (!snapshot.hasData || snapshot.data!.isEmpty) {
-              return Center(child: Text('Nenhuma carta encontrada'));
-            }
-
-            final cartas = snapshot.data!;
-
-            return GridView.builder(
-              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 4,
-                crossAxisSpacing: 4.0,
-                mainAxisSpacing: 4.0,
-                childAspectRatio: 0.6,
-              ),
-              itemCount: cartas.length,
-              itemBuilder: (context, index) {
-                final carta = cartas[index];
-
-                return GestureDetector(
-                  onTap: () {
-                    _showCartaDialog(carta);
-                  },
-                  child: Container(
-                    decoration: BoxDecoration(
-                      image: DecorationImage(
-                        image: carta.imagemUrl.startsWith('data:image/')
-                            ? MemoryImage(_getImageFromBase64(carta.imagemUrl))
-                            : AssetImage(
-                                'assets/img/tarot1.png'), // Usa diretamente o caminho do asset
-                        fit: BoxFit.contain,
-                      ),
-                    ),
-                  ),
-                );
+        child: GridView.builder(
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 4,
+            crossAxisSpacing: 4.0,
+            mainAxisSpacing: 4.0,
+            childAspectRatio: 0.6,
+          ),
+          itemCount: cartas.length,
+          itemBuilder: (context, index) {
+            final carta = cartas[index];
+            return GestureDetector(
+              onTap: () {
+                _showCartaDialog(carta);
               },
+              child: Container(
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                    image: AssetImage(carta.imagemUrl),
+                    fit: BoxFit.contain,
+                  ),
+                ),
+              ),
             );
           },
         ),

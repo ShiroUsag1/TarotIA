@@ -39,7 +39,7 @@ migrate_working_dir/
 /ios/
 
 #BackEnd related
-/venv/
+/backend/.venv/
 
 # Symbolication related
 app.*.symbols

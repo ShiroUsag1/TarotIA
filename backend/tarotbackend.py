@@ -1,12 +1,10 @@
 import os
 from flask import Flask, jsonify, request
-import openai
 from pymongo import MongoClient
 from pymongo.server_api import ServerApi
-from openai import OpenAI
 from urllib.parse import quote_plus
 from flask_cors import CORS
-from models import Carta
+from cartasModels import Carta
 
 
 username = os.getenv("USERNAME")
@@ -23,10 +21,6 @@ uri = f"mongodb+srv://{username_escaped}:{password_escaped}@{url_db}"
 client = MongoClient(uri, server_api=ServerApi("1"))
 db = client["tarot_database"]
 cartas_collection = db["cartas"]
-
-
-api_key = os.getenv("OPENAI_API_KEY")
-openai_client = OpenAI(api_key=api_key)
 
 
 app = Flask(__name__)
@@ -70,7 +64,7 @@ def get_cartas():
 
 #         prompt = f"As cartas tiradas foram {', '.join(cartas)}. Os significados são {', '.join(simbolismos)}. Qual seria a interpretação geral dessa tirada?"
 
-        # response = openai_client.chat.completions.create(
+        # response = openai_client.chat.completions.create(    trocar pela API IA que for usar
         #     messages=[
         #         {
         #             "role": "user",

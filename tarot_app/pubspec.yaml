@@ -27,6 +27,7 @@ flutter:
   uses-material-design: true
   assets:
     - assets/img/
+    - assets/cards/
   fonts:
     - family: AlexBrush
       fonts:
