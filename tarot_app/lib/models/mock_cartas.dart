@@ -477,13 +477,22 @@ List<CartaTarot> mockCartas = [
           "Pode indicar falta de visão ou recusa em aprender com suas experiências. Poderia ter sido melhor — e ainda pode — mas mais concentração é necessária e mais trabalho deve ser feito primeiro. Esta não é uma carta negativa invertida, mas indica que mais deve ser feito ou mais deve ser realizado antes de você atingir a posição vertical de segurança. Tempo de limbo. Você pode sentir como se as coisas estivessem em espera. Que lição você não aprendeu? Que coisas estão inacabadas? Pontas soltas estão penduradas. Hora de amarrar essa merda para que você possa seguir em frente. Se você não tiver um encerramento sobre um problema, não pode deixar nada de novo entrar em sua vida. Negócios inacabados. Tudo está no ar. Problemas de viagem."),
   CartaTarot(
       nome: "Ás de Ouros",
-      descricao: "",
+      descricao:
+          "O Ás de Ouros representa um novo começo financeiro. Pode ser um novo emprego, promoção, ganho inesperado ou uma nova maneira de ganhar dinheiro. É um sinal de que as coisas estão mudando para melhor, especialmente em relação às finanças. Abundância e prosperidade. Entrando no caminho certo. Novas fontes de renda. Isso também pode indicar uma grande compra ou investimento. Manifestando grandes objetivos. Uma oportunidade auspiciosa. Brilho. Vivendo em grande estilo. Recompensa financeira a caminho. Começo de prosperidade, riqueza e novos negócios. Você está buscando nova direção em sua carreira; está curioso sobre assuntos financeiros. Presente em dinheiro ou em bens podem estar a caminho quando essa carta aparece. Boa fundação está se desenvolvendo. Você está fazendo progressos com suas finanças, e dinheiro extra ou herança podem estar a caminho. Sinaliza prêmios. Sinaliza presentes concedidos, não necessariamente material. Recompensa por um esforço, prosperidade abundante, realismo. Realização prática; resultados tangíveis; poder de conseguir o que precisa; confiar na situação; novo começo; virar a página; estar ancorado no mundo real",
       tipo: "Arcano Menor",
       naipe: "ouros",
       numero: 1,
-      simbolismo: [""],
+      simbolismo: [
+        "Nova oportunidade financeira",
+        "aumento",
+        "novo emprego",
+        "ganho inesperado",
+        "riqueza",
+        "novo caminho"
+      ],
       imagemUrl: "assets/cards/p1.png",
-      inversao: ""),
+      inversao:
+          "Falta de prosperidade. Você tomou a estrada errada no novo começo, ou o começo não será próspero. Você precisa olhar o que está te fazendo falta antes de embarcar na empreitada. Você está preparado? Você pode ter um falso senso de segurança e grandes planos podem não se materializar. Tome cuidado contra ganância or com preocupar-se com dinheiro a um alto custo emocional. Veja suas contas e verifique-se de que está tudo em ordem, antes de fazer novos gastos. Sentindo-se estressado com dinheiro. Ganância. Falta de generosidade. Uma oportunidade atrasada – ou não tão lucrativa quanto inicialmente pensado. Grande despesa inesperada. Muito foco em coisas materiais. Maneiras duvidosas de ganhar a vida. Lavagem de dinheiro. Nota promissória. Tentando cobrar de um idiota falido. Pegando o que não lhe pertence. Troco. Uma esmola."),
   CartaTarot(
       nome: "Dois de Ouros",
       descricao: "Simboliza equilíbrio financeiro e multitarefa.",
@@ -1090,49 +1099,128 @@ List<CartaTarot> mockCartas = [
           "Você está superando eventos ou condições traumáticos. Tempo trará cura. Amanhã é um novo dia. Paciência e oração irão ajudá-lo. Uma cirurgia será bem-sucedida. Trauma irá passar e você se tornará mais forte por conta disso. Um período de preocupação chega ao fim. Alívio do estresse finalmente. Encontrando seu caminho através de uma situação difícil. Cura. Enfrentando a verdade. Descanso. Recuperação de uma doença. O pior já passou, mano. Vendo a luz ou a saída. Mesmo invertida, esta carta ainda pode indicar depressão."),
   CartaTarot(
       nome: "Dez de Espadas",
-      descricao: "Simboliza fim e traição.",
+      descricao:
+          "O final completo e absoluto, com um acompanhamento de dor. Está tudo acabado agora. Cantando aquele canto do cisne. Aceite que as coisas estão feitas e siga em frente. Ruína nas mãos de outro. Fracasso. A data de validade chega. Inimigos. Traidores, odiadores insignificantes. Chegando ao fundo do poço. Infortúnio. Recaída. Luz no fim de um túnel de mágoa. Fisicamente, esta carta pode indicar cirurgia nas costas ou dor nas costas. Pedir um divórcio ou largar um emprego; conclusão próxima, pois não há vida na situação. As condições estão obsoletas e podem levar a infortúnio repentino se não atingem seu fim natural. Senso profundo de perda (legal, de trabalho, social). Fim de um cilo cármico e de um estilo de vida. Obrigações passadas estão concluídas, o antigo estilo de vida se encerra e a dívida cármica é quitada. Iluminação, ponto de virada, martírio. Autopiedade exagerada; sentir que a vida está contra você; bancar a vítima; vencer a ilusão",
       tipo: "Arcano Menor",
       naipe: "espadas",
       numero: 10,
-      simbolismo: ["fim", "traição", "destruição"],
+      simbolismo: [
+        "Iluminação",
+        "ponto de virada",
+        "martírio",
+        "liberação cármica",
+        "O fim de um ciclo",
+        "fim",
+        "traição",
+        "dor",
+        "derrota",
+        "novos horizontes",
+        "fracasso",
+        "desfazer",
+        "traição",
+        "ruína",
+        "finalidade"
+      ],
       imagemUrl: "assets/cards/s10.png",
-      inversao: ""),
+      inversao:
+          "O ciclo de mudança terminou. É possível ver a luz no fim do túnel. Melhora na saúde; perdas estão no passado. Se passou por um divórcio, já é página virada e você está pronto para seguir adiante. Sentimentos sobre a perda não são mais tão profundos. O trauma está no passado. Saída de reabilitação. Novos horizontes e novo ciclo começará. Cura de uma ferida antiga. Recuperação de uma cirurgia ou doença. O recomeço após um período de dor. A promessa de um novo dia. Reinicialização. Recuperação. Perdoar um traidor. Ser o homem maior. Dar a outra face. Se recompor após um fracasso épico e encontrar a coragem para recomeçar. Buscar redenção. Não acabou até acabar."),
   CartaTarot(
       nome: "Pajem de Espadas",
-      descricao: "Representa curiosidade e vigilância.",
+      descricao:
+          "Notícias importantes podem estar chegando. Prepare-se para ouvir a verdade. Se você está buscando os fatos em qualquer situação, mantenha-se firme e continue avançando. A verdade está próxima. Situações podem exigir pensamento crítico e afiado. Você pode se ver precisando defender seus pensamentos ou ideias. Montar uma defesa legal. Uma necessidade de um advogado para analisar as coisas. Esta carta pode indicar novas ideias ou novas maneiras de pensar. Também pode representar uma criança obstinada e corajosa que o manterá alerta. Fazer um juramento. Buscadores da verdade. Mensageiro da vigilância. Pessoa inteligente, que pensa rápido e capaz de lidar com qq emergência. Mensageiro que nos pede para olhar com cuidado o significado de uma situação. Graça, habilidade, inquisitivo. Tem desejo de comunicar e ajudar outros dando informação. Pode ter atraso nos planos ou notícia ruim; é preciso coragem p/ lidar. Espiar. Sabedoria baseada na experiência; comunicar seus planos; buscar os fatos; ideias joviais; honestidade renovadora; uma pessoa jovem de coração; parceiro amoroso desafiador",
       tipo: "Arcano Menor",
       naipe: "espadas",
       numero: 11,
-      simbolismo: ["curiosidade", "vigilância", "aprendizado"],
+      simbolismo: [
+        "Vigilância",
+        "pronto para a ação",
+        "lógica e razão",
+        "perspicácia",
+        "defesa",
+        "verdade",
+        "legal",
+        "pensamento aguçado",
+        "criança espirituosa e obstinada",
+        "novas ideias"
+      ],
       imagemUrl: "assets/cards/sp.png",
-      inversao: ""),
+      inversao:
+          "Uma defesa instável – ou uma postura excessivamente defensiva. Falta de lógica. Crueldade e crueldade. Não encarar os fatos. Um argumento fraco. Problemas legais ou fiscais. Ser incapaz ou não querer falar a verdade. Ações covardes. Pensamento nebuloso. Roubar as ideias de outra pessoa. Uma criança malcriada e rebelde. Birras. Más notícias. Quebrar votos. Se vingar. Vingança."),
   CartaTarot(
       nome: "Cavaleiro de Espadas",
-      descricao: "Simboliza ação rápida e determinação.",
+      descricao:
+          "Quando esta carta aparece, você pode ter certeza de que alguém (até mesmo você) está trabalhando horas extras para garantir que seja ouvido. Isso é tudo sobre comunicação forte e ousada. É a carta que você quer ver quando precisar de um advogado agressivo defendendo seu caso. O Cavaleiro de Espadas sempre faz seu ponto, mesmo que ele irrite as pessoas ao longo do caminho. Esta carta também pode representar mover-se rapidamente em direção ao objetivo ou ponto de vista. Luta forte e intensa e estratégias agressivas. Buscador da verdade. Um cruzado. No amor, é um jovem que entra em cena rapidamente, traz excitação e agita as coisas. Preste atenção nos eventos! Pessoa ou evento chegando em sua vida. Vai direto ao assunto e diz a verdade. Tem necessidade de informar sobre algo importante. Alguém que faz e acontece. É cortês, generoso e tem boas inten",
       tipo: "Arcano Menor",
       naipe: "espadas",
       numero: 12,
-      simbolismo: ["ação", "determinação", "urgência"],
+      simbolismo: [
+        "Autoconfiança",
+        "poder de decisão",
+        "franqueza",
+        "impetuosidade",
+        "conhecimento abundante",
+        "indiscrição e crítica",
+        "impaciência",
+        "intelecto poderoso",
+        "agressão mental",
+        "comunicação ousada",
+        "avançar",
+        "assertividade",
+        "pressa",
+        "contador de verdades",
+        "debate",
+        "desafio mental"
+      ],
       imagemUrl: "assets/cards/skn.png",
-      inversao: ""),
+      inversao:
+          "Atrasos, apreensões, conflitos ou batalhas a serem ganhas. Dificuldade em manter a energia, a força ou a atitude mental. Não consegue lidar com as condições pois está mentalmente cansado. Argumentativo e causador de problemas, sempre pronto p/ a briga. Alguém oposto a seus pensamentos e ações. Falta de preocupação com os outros. Fique longe! Desonestidade e decepção. Agressão mental se torna crueldade. Palavras que ferem. Um ataque deliberado. Um ato de vingança. Uma situação ou pessoa fora de controle. A aspereza se torna maçante. Um idiota ou fanfarrão. Intolerância. Uma pessoa que pode estar tentando empurrar sua verdade ou visão de mundo para os outros. Um idiota total. Esta carta às vezes pode indicar um parceiro mental e/ou fisicamente abusivo. Violência. Brutalidade policial. Brigas injustas. Passivo-agressivo. Planos mal concebidos. Covardia. Abuso de poder. Comportamento criminoso. Crueldade. Um movimento de cadela. Comportamento desonesto. Bandido."),
   CartaTarot(
       nome: "Rainha de Espadas",
-      descricao: "Representa independência e objetividade.",
+      descricao:
+          ":A Rainha de Espadas é a líder do pensamento feminino. Ela é perspicaz, intelectual e perspicaz. Ela é governada pela lógica, não pelo seu coração. Isso não significa que ela não tenha coração, ela simplesmente quer ter certeza de que as coisas façam sentido. Uma juíza perspicaz, ela é sempre sobre o que é justo. Quando esta carta aparece na sua leitura, você pode ser chamada para incorporar essas características. Isso às vezes pode se manifestar como crítica e franqueza. Falar a verdade a todo custo, sem se preocupar com quem se machuca. Pensadora e conselheira analítica. Signo: aquário. Ótima professora, advogada, psicóloga. Mente afiada, boa observadora, boa ouvinte que analisará todas as condições com lógica e equilíbrio. Boa palestrante e organizadora. Liderança e capacidade de controlar as emoções. Favorece a lógica e o bom-senso. Caráter forte e sabe lidar com as adversidades",
       tipo: "Arcano Menor",
       naipe: "espadas",
       numero: 13,
-      simbolismo: ["independência", "objetividade", "inteligência"],
+      simbolismo: [
+        "inteligência",
+        "lógica",
+        "perspicácia",
+        "líder de pensamento",
+        "autossuficiente",
+        "ar",
+        "visão clara",
+        "astúcia",
+        "despretensão",
+        "direto",
+        "realista",
+        "incisivo"
+      ],
       imagemUrl: "assets/cards/sq.png",
-      inversao: ""),
+      inversao:
+          "Passou por alguma perda. Se irrita facilmente, incapaz de se disciplinar. Não está aberta a escutar e vai dizer aos outros o que fazer. Será mal-compreendida, por isso terá dificuldades com os outros. Muito crítica e dogmática. Forte e rígida. Tendência a fofocar e distorcer os fatos, para forçar os outros a compartilharem seus pontos de vista. A energia se torna fria e implacável. Frígida. Vingativa e maldosa. Ela vai cortar uma cadela! Uma visão de mundo amarga. Incapaz de ver o positivo. Esta carta também pode indicar alguém que fala com uma língua bifurcada. Traidor. Desonestidade. Incapaz de controlar a raiva. Falta de compaixão. Incapaz de entender os sentimentos de outra pessoa. Trivial. Um odiador. Viúva negra"),
   CartaTarot(
       nome: "Rei de Espadas",
-      descricao: "Simboliza autoridade e verdade.",
+      descricao:
+          "A cabeça governa o coração quando esta carta chega em uma leitura. As emoções estão fora da equação para o Rei de Espadas. É hora do Sr. Spock. Os pensamentos são comunicados com maestria e inteligência. Afinal, este é o líder de pensamento. O mestre do pensamento  claro. Mentalmente afiado e resistente com uma habilidade de ir direto ao ponto. Espirituoso, mas às vezes direto. O buscador da verdade. Se não fizer sentido, é mentira. Esta carta pode descrever um homem poderoso, que trabalha em uma capacidade profissional (como um advogado). Ele traz verdade e justiça, bem como uma vantagem intelectual para cada situação. Este é o cara para ter no seu canto quando você estiver pronto para parar de brincar e ir direto ao assunto. Assumir as rédeas da situação; visão objetiva da vida; padrões elevados; julgamento justo; valores patriarcais; capacidade e prudência; talentos intelectuais",
       tipo: "Arcano Menor",
       naipe: "espadas",
       numero: 14,
-      simbolismo: ["autoridade", "verdade", "justiça"],
+      simbolismo: [
+        "Líder de pensamento",
+        "lógico",
+        "sensato",
+        "intelectual",
+        "justo",
+        "verdadeiro",
+        "aguçado mentalmente",
+        "direto",
+        "justo",
+        "assertivo",
+        "analítico"
+      ],
       imagemUrl: "assets/cards/sk.png",
-      inversao: ""),
+      inversao:
+          "Está mentalmente exausto, incapaz de lidar com o estresse da situação. Más notícias chegaram e ele não está lidando bem ou não consegue encontrar o equilíbrio. É crítico, frio, distante, obstinado e pode ser cruel, especialmente com palavras. Não é sensível às necessidades dos outros. Está preocupado com seus próprios pensamentos e ideias e pode ficar obcecado com suas intenções e ações. Por não ver os 2 lados, pode ser severo ou injusto nos julgamentos. A lógica se torna cruel e implacável. Crueldade, malícia e implacável. Uma mente fria e calculista determinada a conseguir o que querem, não importa quem pareça estar no caminho. Um cínico. Trapaceiro. Criminoso de colarinho branco. Alguém que é incapaz de ter qualquer empatia. Impenitente. Manobras legais enganosas. Políticos corruptos. Suborno. Alguém que opera por um código de ética diferente. Abuso de poder. Abuso físico e mental. Isso também pode indicar que você precisa adotar uma abordagem implacável para uma situação. Ficando todo bandido."),
   CartaTarot(
       nome: "Ás de Paus",
       descricao:

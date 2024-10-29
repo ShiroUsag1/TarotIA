@@ -38,13 +38,12 @@ migrate_working_dir/
 .flutter-plugins-dependencies
 .pub-cache/
 .pub/
-/build/
-/windows/
-/macos/
-/linux/
-/test/
-/web/
-/ios/
+tarot_app/build/
+tarot_app/windows/
+tarot_app/macos/
+tarot_app/linux/
+tarot_app/web/
+tarot_app/ios/
 
 #BackEnd related
 /backend/.venv/
@@ -54,6 +53,3 @@ app.*.symbols
 
 # Obfuscation related
 app.*.map.json
-
-# Android Studio will place build artifacts here
-/android/
