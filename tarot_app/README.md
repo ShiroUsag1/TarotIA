@@ -1,4 +1,4 @@
-# tarot_app
+# tarotia
 
 A new Flutter project.
 

@@ -44,6 +44,8 @@ tarot_app/macos/
 tarot_app/linux/
 tarot_app/web/
 tarot_app/ios/
+tarot_app/android/
+
 
 #BackEnd related
 /backend/.venv/

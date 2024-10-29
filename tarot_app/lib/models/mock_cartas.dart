@@ -495,121 +495,302 @@ List<CartaTarot> mockCartas = [
           "Falta de prosperidade. Você tomou a estrada errada no novo começo, ou o começo não será próspero. Você precisa olhar o que está te fazendo falta antes de embarcar na empreitada. Você está preparado? Você pode ter um falso senso de segurança e grandes planos podem não se materializar. Tome cuidado contra ganância or com preocupar-se com dinheiro a um alto custo emocional. Veja suas contas e verifique-se de que está tudo em ordem, antes de fazer novos gastos. Sentindo-se estressado com dinheiro. Ganância. Falta de generosidade. Uma oportunidade atrasada – ou não tão lucrativa quanto inicialmente pensado. Grande despesa inesperada. Muito foco em coisas materiais. Maneiras duvidosas de ganhar a vida. Lavagem de dinheiro. Nota promissória. Tentando cobrar de um idiota falido. Pegando o que não lhe pertence. Troco. Uma esmola."),
   CartaTarot(
       nome: "Dois de Ouros",
-      descricao: "Simboliza equilíbrio financeiro e multitarefa.",
+      descricao:
+          "Você pode se encontrar fazendo malabarismos com mais de uma coisa. Equilíbrio e agilidade. Ser capaz de fazer mais de uma coisa ao mesmo tempo. Destreza. Multitarefa. Permanecer firme e flexível durante um período agitado. O 2 de Ouros também pode representar opções e escolhas. Mais de uma opção para escolher. Pese os prós e os contras cuidadosamente. A resposta pode estar no meio. Viagem. Dinheiro de duas fontes. Trabalhar em dois empregos como um verdadeiro hustla.       Equilibrando recursos, em especial sobre temas financeiros. Habilidade de lidar com vários projetos ao mesmo tempo. Você mantém o equilíbrio em meio a mudanças e tomadas de decisões. Novos projetos podem ter dificuldade em iniciar, mas você tem de manter a energia e força para levá-los adiante. Harmonia deve ser mantida. Não deixe notícias ruins te atrasarem. Bom conselho a caminho. Equilíbrio, destreza, flexibilidade, malabarismo. Agilidade em lidar com coisas materiais; adaptar-se às necessidades do relacionamento; fazer muitas coisas ao mesmo tempo; lidar com vários problemas de uma vez; sentir-se confiante de suas capacidades; divertir-se; levar em conta as opções; querer seguir o fluxo; compreender a mudança.",
       tipo: "Arcano Menor",
       naipe: "ouros",
       numero: 2,
-      simbolismo: ["equilíbrio", "multitarefa", "adaptabilidade"],
+      simbolismo: [
+        "decisões",
+        "financeiras",
+        "malabarismo",
+        "escolha",
+        "opções",
+        "equilíbrio",
+        "destreza",
+        "divertir-se"
+      ],
       imagemUrl: "assets/cards/p2.png",
-      inversao: ""),
+      inversao:
+          "Você não está conseguindo lidar com muitas coisas ao mesmo tempo. Desorganização pode estar causando dificuldade, e você deve se planejar para evitar fracasso dos seus planos. Você deve se desincumbir de alguma tarefa. Desequilíbrio. Problemas para gerenciar seus recursos, tempo ou responsabilidades. Muitas escolhas. Decisões financeiras ruins. Ter dificuldade para pagar as contas. Uma incapacidade de lidar com sua rotina diária. Instabilidade. Ficar em cima do muro e não conseguir tomar uma decisão. Uma incapacidade de se comprometer. Irresponsabilidade."),
   CartaTarot(
       nome: "Três de Ouros",
-      descricao: "Representa trabalho em equipe e colaboração.",
+      descricao:
+          "O Três de Ouros é tudo sobre trabalho em equipe e colaboração. Quão bem você trabalha ou brinca com os outros? Para terminar um projeto até a conclusão, você pode precisar da ajuda de seus colegas de trabalho. Trabalhando juntos para um objetivo semelhante. Esta carta também é sobre aprendizado e desenvolvimento de habilidades. Escola. Aprender um ofício. Trabalhar com mentores para refinar seus talentos. Também é sobre construção ou reforma, especialmente se aparecer em uma pergunta sobre uma casa. Esta carta também pode indicar uma cerimônia como um casamento ou batismo. Fazendo as coisas. Comitiva. Colocar-se à prova; uma estratégia competente; estar ciente de seu potencial; unir-se a outros; espírito de equipe; reconhecimento de uma habilidade; obsessão pelos detalhes; dependência excessiva das opiniões alheias. Recompensa por um trabalho bem feito. Ganhos materiais e sucesso, advindos de seu trabalho duro e esforço. Ser aceito em algum grupo ou organização.",
       tipo: "Arcano Menor",
       naipe: "ouros",
       numero: 3,
-      simbolismo: ["colaboração", "trabalho em equipe", "reconhecimento"],
+      simbolismo: [
+        "Crescimento profissional",
+        "ganho material",
+        "aprendizagem",
+        "colaboração",
+        "trabalho em equipe",
+        "habilidade",
+        "criação",
+        "construção",
+        "planos",
+        "cooperação",
+        "planejamento"
+      ],
       imagemUrl: "assets/cards/p3.png",
-      inversao: ""),
+      inversao:
+          "Os reconhecimentos não vêm e aprovação de seu trabalho e habilidade demora a chegar. Não consegue fazer seu trabalho como pretendia. Você não consegue fazer um bom trabalho pois não tem os recursos. Desentendimentos contratuais – negociações são possíveis, mas podem não ter o resultado desejado. Trabalho medíocre, condições de trabalho ruins. Trabalho desleixado. Falta de habilidade. Incapacidade de trabalhar com a equipe. Falta de reconhecimento por um trabalho bem feito. Reparos. Consertar o trabalho ruim de outra pessoa. Brigar com colegas de trabalho. Políticas de escritório atrasam o trabalho. Falta de comprometimento. Um projeto é adiado repetidamente. Planos falhos. Mudar o jogo no último minuto. Desprezar os esforços de outra pessoa. Inimigos odiando seu trabalho."),
   CartaTarot(
       nome: "Quatro de Ouros",
-      descricao: "Simboliza segurança financeira e apego ao dinheiro.",
+      descricao:
+          "Você tem tudo que precisa para se sentir seguro. Poder financeiro. Sucesso material. Dinheiro no banco. Hábitos frugais. Aquisitividade. Ganância e avareza. A capacidade de acumular riqueza. Viver grande. Balançar. Esta carta também é sobre manter padrões como se recusar a deixar ir uma situação. Em relacionamentos, o Quatro de Ouros pode indicar possessividade ou incapacidade de abrir o chacra cardíaco. Protegendo o coração. Acumuladores. Protegendo o que é seu. Indica bom julgamento em questões de negócios. Talento que traz prosperidade. Mostra amor por posses materiais. Você se sente confortável quando tem todos os bens a sua volta. Tem firme comando de seu dinheiro e posses, e trabalhará duro para conseguir ainda mais. Muito apego ao dinheiro e posses que já conseguiu. Pode aparecer quando você segura muito seu dinheiro ou não é generoso – como demorou p/ conseguir seu dinheiro, não o distribui à toa. Não gasta muito. Recusar-se a ceder; acreditar que seu jeito é o certo; limitar seu ponto de vista; controlar os outros com materialismo; É meu!; resistir às mudanças; avarento e mercenário; mente estreita, atitude mesquinha",
       tipo: "Arcano Menor",
       naipe: "ouros",
       numero: 4,
-      simbolismo: ["segurança", "apego", "controle"],
+      simbolismo: [
+        "Maldoso",
+        "possessivo",
+        "controle",
+        "teimoso",
+        "estagnado",
+        "segurança",
+        "possessividade",
+        "ganância",
+        "estabilidade",
+        "perspicácia financeira",
+        "proteção"
+      ],
       imagemUrl: "assets/cards/p4.png",
-      inversao: ""),
+      inversao:
+          "Pessoa se desprendendo de seu dinheiro ou tendo que gastar mais do que o previsto. Possibilidade de perder dinheiro ou bens materiais. Dificuldade em manter segurança financeira. Atraso em pagamento ou no dinheiro extra que estava esperando. Em questões de negócios, você pode sofrer oposição ou um custo extra. Você pode estar gastando demais e precisa tomar cuidado. Deixar ir. Liberar. Abrir-se. Ficar vulnerável. Gastar como um marinheiro bêbado. Fazer chover. Insegurança financeira. Pobres habilidades de gestão de dinheiro. Compartilhar o que você tem. Dar tudo. Sacrifício financeiro. Falência. Uma incapacidade de progredir financeiramente. Ser um idiota quebrado. Pegar o que não lhe pertence. Ganância épica. Consciência de pobreza."),
   CartaTarot(
       nome: "Cinco de Ouros",
-      descricao: "Representa dificuldades financeiras e perda.",
+      descricao:
+          "O Cinco de Ouros significa uma mudança difícil na fortuna. Isso geralmente é um indicador de perda, como perda de emprego ou perda de casa. Dificuldades financeiras criam preocupação e ansiedade. Perder o seu caminho na vida. Viver sem as necessidades básicas. Ser um idiota quebrado. Más decisões levam a dificuldades financeiras ou ruína. Esta carta também pode indicar estar 'no frio' em uma situação. Ser deixado para trás. Apoiar-se em um parceiro durante um período difícil. Relacionamentos codependentes. A ajuda está lá, mas você não consegue vê-la. A festa da pena. Consciência da pobreza: a sensação de que você nunca irá progredir ou que não merece melhor. Um voto de pobreza. Problemas no joelho. Tempos difíceis. Algum tipo de pobreza – espiritual, financeira, falta de conexão com sua comunidade, sentimento de perda e abandono. Você negligenciou sua saúde ou necessidades espirituais e não sabe como lidar com esses aspectos da sua vida. Pode ser perda de emprego. Separação espiritual; busca da alma; estar ferido emocionalmente; sentir-se sozinho ou excluído; negligenciar as próprias necessidades; uma sensação de que algo está faltando na vida.",
       tipo: "Arcano Menor",
       naipe: "ouros",
       numero: 5,
-      simbolismo: ["dificuldade", "perda", "solidão"],
+      simbolismo: [
+        "Falta",
+        "mentalidade",
+        "vitimista",
+        "dificuldade",
+        "rejeição",
+        "perda",
+        "ansiedade financeira",
+        "tempos difíceis",
+        "codependência",
+        "mancando",
+        "no frio",
+        "desespero",
+        "consciência da pobreza",
+        "sem-teto"
+      ],
       imagemUrl: "assets/cards/p5.png",
-      inversao: ""),
+      inversao:
+          "É melhor na posição revertida. Fim de período de má sorte. Você pode encontrar um novo trabalho. Você ganha coragem e retoma sua vida em comunidade e em casa. Você aceitou as condições da perda e atingiu um novo nível de entendimento. Você desenvolveu compaixão e entendeu que a vida tem altos e baixos. Você tem novo interesse em temas espirituais e sente-se cheio de esperança. A ajuda chega. Pronto para aceitar a ajuda oferecida. Mudança financeira em direção à reconstrução. Saindo de um momento difícil e começando de novo. Consciência de onde você errou. Um novo emprego ou casa após um período de incerteza. Indo para casa após um desastre (ex: retornando para casa após um tornado). Abrigo. Refugiado. Bem-estar. Um período de cura. Superando a preocupação em direção a um novo futuro esperançoso. Deixando as ruas perigosas."),
   CartaTarot(
       nome: "Seis de Ouros",
-      descricao: "Simboliza generosidade e doações.",
+      descricao:
+          "O Seis de Ouros pode ser sobre dar ou receber. Em termos de dinheiro, isso pode ser compartilhar a riqueza ou estar em uma posição em que você tem que pedir assistência. Organizações de caridade. Dar ajuda aos necessitados. Generosidade. Estar em uma situação financeira desesperadora e encontrar alívio. Bem-estar. Refugiados. Anistia. Um presente. Recompensa financeira. Fazendo chover. Esta carta também pode indicar justiça sendo distribuida. Em questões sobre relacionamentos, esta carta indica superioridade/inferioridade. Quem está dando e quem está tirando? Alguém está em uma posição mais vantajosa. Um dá mais ao relacionamento do que o outro. Questões de dar e receber.  Boa carta. Indica relacionamento feliz com colegas de trabalho, um aumento de salário, promoção ou oportunidade de distribuir lucros. Você receberá o que é seu de direito. Herança a caminho. Perdas e ganhos; dar e receber; alternar o poder; ter e não ter; dominação ou submissão?; buscar aprovação",
       tipo: "Arcano Menor",
       naipe: "ouros",
       numero: 6,
-      simbolismo: ["generosidade", "equilíbrio", "ajuda"],
+      simbolismo: [
+        "Generosidade",
+        "caridade",
+        "filantropia",
+        "distribuição de riqueza",
+        "boa vontade",
+        "presentes",
+        "consideração",
+        "caridade",
+        "partilha",
+        "dar",
+        "receber",
+        "justiça",
+        "mendigar"
+      ],
       imagemUrl: "assets/cards/p6.png",
-      inversao: ""),
+      inversao:
+          "O presente é pequeno, o bônus é baixo. Presente com condições. Distribuição injusta de herança ou bônus. Práticas de negócios injustas ou anti-éticas. Sua prosperidade está ameaçada de algum modo. Você pode não estar sendo recompensado por todo seu esforço e trabalho. Seus investimentos perderam valor. Avareza. Retenção. Cortar pessoas de assistência. Acumular riqueza. Esta é a falta de caridade, a vibração de “defender-se por si mesmo”. Ignorar os necessitados. Fechar os olhos para a pobreza. Ayn Rand. Estar em uma posição ruim e sem saída. Injustiça financeira. Um caso fracassado. Travessuras legais ou financeiras. O equilíbrio de poder muda e não a seu favor. Não ser capaz de ter suas necessidades atendidas. Uma incapacidade de receber ajuda. Falta de humildade. Aceitar migalhas."),
   CartaTarot(
       nome: "Sete de Ouros",
-      descricao: "Representa avaliação de progresso e paciência.",
+      descricao:
+          "O Sete de Ouros é melhor resumido por 'uma panela vigiada nunca ferve'. Esta carta é sobre os resultados após trabalho duro. Mantenha o foco na sua rotina, as recompensas chegarão no devido tempo. Fazer uma pausa. Parar por um minuto para avaliar o progresso. Metas alcançadas por meio de perseverança e esforço. Arrancar ervas daninhas do jardim. Colocar suas costas nisso. Colher o que você plantou. Investimentos feitos trarão bom retorno, jardim dará frutos. Seu trabalho duro e esforço serão recompensados e você terá lucro pelo seu tempo e trabalho. Essa carta não prediz riqueza, mas bons e sólidos resultados e recompensas em seus investimentos e no trabalho. Mais alguns passos são necessários p/ finalizar o trabalho. Avaliação, frutos do trabalho. Qual o próximo passo?; avaliar o progresso; avaliar onde você está; saber para onde está indo; estar preparado para uma nova estratégia; estar pronto para fazer seu próximo movimento; ver resultados do esforço; fazer uma pausa no trabalho duro",
       tipo: "Arcano Menor",
       naipe: "ouros",
       numero: 7,
-      simbolismo: ["paciência", "avaliação", "crescimento"],
+      simbolismo: [
+        "Crescimento",
+        "espera",
+        "esforço",
+        "pausa",
+        "disciplina",
+        "colheita",
+        "trabalho duro"
+      ],
       imagemUrl: "assets/cards/p7.png",
-      inversao: ""),
+      inversao:
+          "Apesar de muito trabalho e esforço pouco ou nenhum lucro é obtido. Colheitas magras devido, investimentos sem retorno. Talvez você não tenha ganhado um bônus devido a circunstâncias fora de seu controle. Má estimativa; carta aparece quando alguém se engana com o que pensam ser um negócio garantido. Tenha cuidado com seu dinheiro. Carta pode ser aviso que seu investimento não trará o retorno desejado. Um esforço pela metade. Sentir-se preguiçoso e sem vontade de continuar. Desistir cedo demais. Grande esforço, poucos resultados. Fazer algo por nada. Trabalho escravo. Não conseguir ver o potencial. Um investimento ruim. Saber quando parar de se esforçar em algo ruim. Energia desperdiçada. Trabalhar duro, mas não ver nada pelo problema."),
   CartaTarot(
       nome: "Oito de Ouros",
-      descricao: "Simboliza habilidade e aperfeiçoamento.",
+      descricao:
+          "O Oito de Ouros é sobre  trabalhar duro e aproveitar. É também a carta do aprendizado. Quando esta carta aparece na sua leitura, você pode estar engajado em aprender novas habilidades ou trabalhando duro. Embora tudo isso seja sobre trabalho duro, há satisfação. Prolífico. Recompensas por um trabalho bem feito. Criação de um grande corpo de trabalho. Empregado feliz. Esforço contínuo. Moendo. Focado no trabalho em questão. Você tem habilidade para progredir rapidamente devido aos seus talentos e capacidade. Sua experiência culminou em lucro e reconhecimento. Você se sairá bem no trabalho ou nos negócios, pois sabe da necessidade do aprimoramento contínuo. Você só melhora com a prática. Dedicação ao trabalho; produção paciente; perseverança recompensada; atenção cuidadosa ao detalhe; situação repetitiva ou entediante; treinar para uma nova habilidade; ampliar seus conhecimentos",
       tipo: "Arcano Menor",
       naipe: "ouros",
       numero: 8,
-      simbolismo: ["aperfeiçoamento", "habilidade", "dedicação"],
+      simbolismo: [
+        "Habilidade",
+        "diligência",
+        "disciplina",
+        "conhecimento",
+        "aprendiz",
+        "habilidade",
+        "trabalho duro",
+        "produtivo",
+        "workaholic"
+      ],
       imagemUrl: "assets/cards/p8.png",
-      inversao: ""),
+      inversao:
+          "Demora na produção. Trabalho imperfeito ou local de trabalho medíocre resultam em produção atrasada e dificuldade em conseguir o resultado/lucro desejado. Condições de trabalho podem levar a processos judiciais; funcionários não estão satisfeitos. Investimentos darão pouco ou nenhum lucro. Você deveria pensar em um novo trabalho/carreira. Você tem que pensar sobre como usa seu tempo e o que pode fazer para ser mais produtivo. Relaxando. Pegando o caminho mais fácil. Trabalho desleixado. Problemas de aprendizagem. Pouco esforço. Um esforço pela metade, na melhor das hipóteses. Uma falta de ambição. Aqui, a energia se torna desinteressada, frustrada e preguiçosa. Trabalho de reparo. Consertando o trabalho de má qualidade de outra pessoa. Habilidades ruins. Ficar preso a detalhes e não conseguir nada."),
   CartaTarot(
       nome: "Nove de Ouros",
-      descricao: "Representa sucesso financeiro e independência.",
+      descricao:
+          "O Nove de Ouros é sobre a vida luxuosa, segurança financeira e confortos materiais. Riqueza e confortos materiais o cercam. Você tem a habilidade agora de coletar e aproveitar os frutos do seu trabalho. A grande colheita. Aproveitando os luxos da vida. Grandes festas. Vivendo grande. Diva. Tempo livre para lazer e prazer. Você tem tudo o que precisa ou deseja. Os frutos do seu trabalho. Auto-suficiência, independência, maestria de seu mundo financeiro/material. Assegura sucesso  na obtenção de independência financeira. Seus investimentos passados dão frutos, você dominou o caminho até a prosperidade. Agora você pode compartilhar o que tem com os outros e ainda assim ter o suficiente para você. Conexão forte com o ambiente. Amor à vida selvagem e espaços abertos, alguém que aprecia a natureza. Segurança pessoal. Conquista, refinamento, independência, confiança em si mesmo. Ter recursos; saber que está no controle da situação; segurança material ou financeira; aproveitar os melhores prazeres da vida; sensação interior de segurança; agir por conta própria; autodisciplina.",
       tipo: "Arcano Menor",
       naipe: "ouros",
       numero: 9,
-      simbolismo: ["sucesso", "independência", "luxo"],
+      simbolismo: [
+        "Conquista",
+        "refinamento",
+        "independência",
+        "confiança em si mesmo",
+        "segurança",
+        "gratidão",
+        "riqueza",
+        "conforto",
+        "lazer"
+      ],
       imagemUrl: "assets/cards/p9.png",
-      inversao: ""),
+      inversao:
+          "Você não está seguro sobre sua situação financeira atual. Você está descontente com seu ambiente doméstico. Talvez dinheiro não esteja disponível para você fazer o que quer, ou seu crescimento esteja restrito de alguma forma. Algum investimento/transação está te causando ansiedade. Você teme perder o que conquistou. Cuidado com apostas. Não deixe tirarem vantagem de você. A grama parece mais verde do outro lado da cerca. Você pode não apreciar o que tem. Inveja. Cobiçar os bens do seu vizinho. Sentir-se entediado e preso. Querer o que você não tem ou não pode ter. Esbanjar riqueza. Pobre garotinha rica. Grupo de dinheiro. Consumo conspícuo. Materialismo. Viver além de suas possibilidades. Caçadora de ouro."),
   CartaTarot(
       nome: "Dez de Ouros",
-      descricao: "Simboliza legado e segurança familiar.",
+      descricao:
+          "O Dez de Ouros é uma das cartas de dinheiro mais auspiciosas, geralmente significando riqueza. É um sinal de construção de segurança financeira duradoura. Jackpot financeiro. Herança. Um futuro financeiro forte. Segurança para toda a família. Voltando para casa. Reunião de família. Cuidando de todos. Mantendo as tradições. Vivendo em grande estilo. Sucesso ao longo da vida. Representa todas as condições maravilhosas e coisas materiais que conseguimos conquistar ao longo da vida. Família estável, com riqueza. Família que trabalhou duro para conseguir esse nível de riqueza e segurança financeira. Aparece quando compras grandes (casa, carro) estão a caminho. Você tem dinheiro para conseguir realizar seus sonhos. Se parece longe, sua família poderá ajudar ou o banco concederá um empréstimo. Riqueza e segurança. Vida boa, riqueza, convenção, segurança, valores tradicionais Ater-se às regras; desejo de permanência e continuidade; vida feliz em família; segurança material; buscar abundância; prosperidade espiritual ou emocional; sucesso material.",
       tipo: "Arcano Menor",
       naipe: "ouros",
       numero: 10,
-      simbolismo: ["legado", "segurança", "estabilidade"],
+      simbolismo: [
+        "Riqueza",
+        "segurança",
+        "família",
+        "legado",
+        "reunião",
+        "convenção",
+        "segurança",
+        "valores tradicionais"
+      ],
       imagemUrl: "assets/cards/p10.png",
-      inversao: ""),
+      inversao:
+          "Família desarmoniosa. Brigas familiares por herança ou dinheiro em corporações. A riqueza estabelecida está em cheque. Investimentos em risco. Infortúnio familiar, mau investimento, gastança. Corporações terão dificuldade em se manter. Algo que você possui perdeu valor. Perdas financeiras devido à macroeconomia ou má administração. Um golpe na segurança financeira. Não peça dinheiro emprestado para parentes. Problemas familiares. Negligenciar a casa ou a família. Irresponsabilidade fiscal. Desperdiçar uma herança. Ficar preso cuidando de todos. Brigas familiares. Ser excluído do testamento. Perder investimentos. Execução hipotecária."),
   CartaTarot(
       nome: "Pajem de Ouros",
-      descricao: "Representa novos começos e mensagens financeiras.",
+      descricao:
+          "O Pajem de Ouros é um indicador de novas oportunidades financeiras. Pode ser um aumento, promoção ou novo emprego. Também pode indicar o início de um novo empreendimento. Uma nova maneira de ganhar dinheiro ou boas notícias sobre sua situação financeira. Agora é a hora de plantar suas sementes. Se você estiver disposto a investir tempo e energia, poderá manifestar seus objetivos. Mantenha-se firme e adote uma abordagem prática. O Pajem de Ouros também pode representar um bom aluno ou um estágio. Esta é uma pessoa estudiosa que assume grande responsabilidade em aprender seu ofício. Pequeno traficante.  Ama estudar e aprender coisas práticas, e é diligente com sua vida. Traz esperança e promessa de boa sorte no mundo material (emprego, aumento, bolsa). Pode ser um jovem e perseverante aluno, generoso e gentil com todos que conhece. Tem entusiasmo com a educação e o progresso, e as recompensas materiais que vêm com ambos. Cuidadoso e cauteloso, estuda tudo antes de tomar uma decisão.  Colocar as rodas em movimento; buscar oportunidade; conhecer suas limitações; querer ser próspero; mensageiro financeiro; trabalhador dedicado.",
       tipo: "Arcano Menor",
       naipe: "ouros",
       numero: 11,
-      simbolismo: ["novos começos", "mensagens", "aprendizado"],
+      simbolismo: [
+        "Prática",
+        "perseverança.",
+        "abordagem prática",
+        "objetivos realistas",
+        "esforço concentrado",
+        "foco e progresso",
+        "novos projetos",
+        "oportunidade financeira",
+        "notícias sobre dinheiro",
+        "estudante",
+        "nova semente financeira",
+        "novo empreendimento"
+      ],
       imagemUrl: "assets/cards/pp.png",
-      inversao: ""),
+      inversao:
+          "Atrasos te impedem de receber noas notícias sobre finanças, oferta de empregos ou bolsas. Alguém que não segue direcionamentos.. Segue seu jovem grupo de amigos, recusando-se a ouvir bons conselhos de adultos. Rebeldia e frustração. É quieto e temperamental, e pode retirar-se ou sabotar eventos. Ama luxo e bens materiais, mas não tem muito desejo de trabalhar por eles. Preguiçoso devido a sua procrastinação e falta de motivação. Metas que não dão certo. Bloqueios e frustrações em torno de dinheiro. Um investimento que acaba sendo um fracasso. Troco. Uma incapacidade de tirar um empreendimento do papel. Más notícias financeiras. Uma decepção. Uma situação promissora decepciona. Problemas com a escola. Um preguiçoso que não vive de acordo com seu potencial. Falta de recompensas. Bunda quebrada e quebrada. Comportamento mesquinho."),
   CartaTarot(
       nome: "Cavaleiro de Ouros",
-      descricao: "Simboliza responsabilidade e perseverança.",
+      descricao:
+          "O Cavaleiro de Pentacles é um sujeito robusto e trabalhador. A energia por trás desta carta é prática, metódica e focada em colher uma recompensa pelo esforço. De todos os Cavaleiros, este é o único que está parado. Ele é pé no chão, enraizado e respeitoso. Comprometido com uma meta. Trabalhando “a terra” e se preparando para uma grande colheita. Confiabilidade e eficiência. Pessoas que lidam com assuntos monetários. Confiável. Esta carta também pode indicar assumir a responsabilidade por um projeto ou situação. Permanecer comprometido com uma causa. E um novo líder. Chefe em treinamento. Uma oferta de emprego. É cuidadoso e faz um bom trabalho. Confiável e honesto. Natureza fácil de lidar, tem compaixão, ama animais, gosta de criança e dos presentes que pode oferecer aos outros. Seu foco é ajudar os outros a avançarem. Pode representar um evento como uma venda, um negócio ou um investimento em algo sólido e estável. Ele é sólido e estável. Pode trazer novidades em relação a um aumento, uma nova oferta de trabalho, um investimento que aumentará de valor ou um empréstimo que será concedido. . Alguém tradicional; determinado ou dogmático; realista ou melancólico; dedicado ou inflexível; cumpre tarefas; cautela ou medo de se arriscar; esforço sem entusiasmo; fidelidade; alguém que demora a se envolver no amor",
       tipo: "Arcano Menor",
       naipe: "ouros",
       numero: 12,
-      simbolismo: ["responsabilidade", "perseverança", "determinação"],
+      simbolismo: [
+        "Trabalho manual",
+        "responsabilidade",
+        "persistência",
+        "realismo",
+        "prático",
+        "metódico",
+        "estável",
+        "oferta",
+        "respeito",
+        "esforço fundamentado",
+        "foco financeiro"
+      ],
       imagemUrl: "assets/cards/pkn.png",
-      inversao: ""),
+      inversao:
+          "Pode ser irresponsável, principalmente porque é disperso e não consegue focar no trabalho/tarefa. Não consegue terminar as coisas e é devagar em suas ações, que exigem muito esforço. Progresso interrompido. Quando aparece, dinheiro, novo trabalho ou assuntos importantes na vida ficam parados. Precisa de muito incentivo para atravessar esse tempo difícil. Quer evitar confrontos e é temperamental e introspectivo. É o solitário e o insatisfeito do tarô."),
   CartaTarot(
       nome: "Rainha de Ouros",
-      descricao: "Representa segurança financeira e nutrição.",
+      descricao:
+          "A Rainha de Ouros é quente e pé no chão. De todas as Rainhas, ela também é a mais 'maternal' do grupo. Ela gosta de cuidar do lar e da lareira. É com ela que você pode contar quando as coisas estão difíceis. Ela é confiável e está sempre pronta para dar uma mão a qualquer um que precise. Ela também é experiente em negócios e sabe como criar um dinheiro do nada - e conservar o que tem. Quando esta carta aparece na sua leitura, você pode ser chamado para canalizar essa energia. Trazer o bacon para casa e fritá-lo em uma panela. Fertilidade. A verdadeira 'mãe terra' das Rainhas. Autossuficiência. Segurança nutritiva. Adoro esse brilho. Fertilidade e abundância. Criativa, sabe cuidar de sua família e das condições financeiras de sua vida. Boa em carreiras de negócios e em cuidar de crianças e jardins. Não tem medo de trabalho duro. É produtiva e gosta de ver coisas ou pessoas crescerem. É caridosa e generosa com o que tem, e quer compartilhar com os outros. Tem personalidade quieta, é atenta aos outros, é fácil de lidar. Sempre cumpre suas tarefas bem, pois é responsável. Visão realista da vida; ater-se aos fatos; confiável e leal; sentir-se seguro e caseiro; desejo genuíno de ajudar outra pessoa; amante de animais e crianças; criativa e cheia de recursos.",
       tipo: "Arcano Menor",
       naipe: "ouros",
       numero: 13,
-      simbolismo: ["nutrição", "segurança", "cuidado"],
+      simbolismo: [
+        "Dependente",
+        "maternal",
+        "de bom coração",
+        "sensual",
+        "generosa",
+        "mãe terra",
+        "segura",
+        "confiável",
+        "prática",
+        "fundamentada",
+        "terrena"
+      ],
       imagemUrl: "assets/cards/pq.png",
-      inversao: ""),
+      inversao:
+          "Tem insegurança sobre finanças e sua habilidade de pagar as contas. Temperamental ou melancólica, pois tem dificuldade com o mundo material. Pode ser muito dependente dos outros p/ o seu bem-estar. Pode negligenciar suas tarefas e responsabilidades por insegurança ou medo. Pode mostrar desconfiança de outros. Medo de falhar pode fazê-la vulnerável a temperamentos irregulares. Pode parecer necessitada e pode manipular fundos para adquirir coisas. Já passou por situação financeira difícil na vida – e poderá passar de novo. A energia vai de zeladora a interesseira. Obcecada com o lado material da vida, essa mulher vai tramar para ter suas necessidades atendidas. Tomando tudo o que ele tem. Preocupada demais em acompanhar os vizinhos. Ganância. Dependência financeira. Incapacidade de se sustentar financeiramente - ou incapacidade de sustentar a família. Falta de habilidades domésticas. Extremamente egocêntrica. A vadia temperamental e teimosa. Odiadora ciumenta. Falida."),
   CartaTarot(
       nome: "Rei de Ouros",
-      descricao: "Simboliza sucesso financeiro e liderança.",
+      descricao:
+          "O Rei de Ouros é o mestre das finanças. Este é o chefe, o Diretor Financeiro de qualquer organização. Ele é trabalhador, ambicioso, prático e um bom provedor. A segurança é importante para ele. Este Rei gosta de cuidar muito bem de sua família. Ele protege seus bens e está preocupado em acumular riqueza. Quando esta carta aparece em sua leitura, você pode precisar incorporar sua energia séria e confiável. O Rei de Ouros é uma figura paterna forte e tradicional e ele traz uma vibração paternal a todos os seus negócios. Ele tem o 'toque de Midas' e é capaz de transformar tudo que toca em ouro. O rei do brilho. Vivendo extragrande. Grande bola. Pai com disposição gentil, executivo próspero, homem casado confiável com foco na segurança da família. Habilidade de tomar decisões sobre questões financeiras. Lógico, metódico e responsável. Firme e estável com todos. Acredita que todos podem ter segurança material. Lida bem com investimentos, banco e imóveis.",
       tipo: "Arcano Menor",
       naipe: "ouros",
       numero: 14,
-      simbolismo: ["sucesso", "liderança", "estabilidade"],
+      simbolismo: [
+        "Confiável",
+        "sagaz",
+        "materialista",
+        "empreendedor",
+        "defensor",
+        "firme",
+        "próspero",
+        "benevolente",
+        "amigável",
+        "gentil",
+        "generoso",
+        "pensativo",
+        "trabalhador",
+        "chefe",
+        "autoridade",
+        "pai",
+        "prático",
+        "seguro"
+      ],
       imagemUrl: "assets/cards/pk.png",
-      inversao: ""),
+      inversao:
+          "Ainda quer segurança financeira, mas não quer trabalhar duro para isso. Quer as coisas boas da vida mas não quer – ou não consegue – fazer o necessário p/ obtê-las. É teimoso, materialista, devagar, não percebe seus hábitos de consumo, toma decisões erradas sobre sobre assuntos financeiros. Pode aparecer qd há engano em temas de dinheiro ou finanças. A energia se torna mesquinha e mesquinha. Em vez de ser generoso, ele tem amarras em seu dinheiro. Mais preocupado com ele mesmo em vez do bem de todos. Ganância extrema e materialismo. Disposto a vender sua alma pelo todo-poderoso dólar. Um homem teimoso e difícil. Teimoso a ponto de ser obstinado. Maníaco por controle. Ciumento e autoritário. O chefe do inferno. Abuso de poder. Um caloteiro. Conseguir dinheiro de forma desprezível. Má gestão financeira."),
   CartaTarot(
       nome: "Ás de Copas",
       descricao:

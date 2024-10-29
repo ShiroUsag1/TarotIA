@@ -12,7 +12,6 @@ class IntroMainState extends State<IntroMain> {
   void initState() {
     super.initState();
 
-    // Após 5 segundos, redireciona para a DashboardScreen
     Future.delayed(Duration(seconds: 5), () {
       if (mounted) {
         Navigator.pushReplacement(

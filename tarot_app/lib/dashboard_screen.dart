@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'constants_colors.dart';
-import 'package:tarot_app/subpages/ajudaia/ajuda_ia.dart';
-import 'package:tarot_app/subpages/manual/manual.dart';
+import 'package:tarotia/subpages/ajudaia/ajuda_ia.dart';
+import 'package:tarotia/subpages/manual/manual.dart';
 // ignore: unused_import
 import 'dart:math' as math;
 
@@ -77,7 +77,6 @@ class DashboardScreenState extends State<DashboardScreen>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: ConstColors.dark,
       appBar: AppBar(
         backgroundColor: ConstColors.primary,
         title: RichText(
@@ -86,7 +85,7 @@ class DashboardScreenState extends State<DashboardScreen>
               TextSpan(
                 text: 'Tarot',
                 style: TextStyle(
-                  fontFamily: 'AlexBrush', // Fonte para a primeira palavra
+                  fontFamily: 'AlexBrush',
                   fontSize: 50,
                   color: Colors.white,
                 ),
@@ -94,7 +93,7 @@ class DashboardScreenState extends State<DashboardScreen>
               TextSpan(
                 text: 'IA',
                 style: TextStyle(
-                  fontFamily: 'Roboto', // Fonte para a segunda palavra
+                  fontFamily: 'Roboto',
                   fontSize: 20,
                   color: Colors.white,
                 ),
@@ -103,40 +102,53 @@ class DashboardScreenState extends State<DashboardScreen>
           ),
         ),
       ),
-      body: SingleChildScrollView(
-        child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              SizedBox(height: 50),
-              _buildTarotCard(
-                  "Tiragem Aleatória", 'assets/img/tarot1.png', false, () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => TiragemAleatoriaScreen()),
-                );
-              }),
-              SizedBox(height: 20),
-              _buildTarotCard("Ajuda da IA", 'assets/img/tarot2.png', true, () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => AjudaIAScreen()),
-                );
-              }),
-              SizedBox(height: 20),
-              _buildTarotCard(
-                  "Manual Das Cartas", 'assets/img/tarot3.png', false, () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => ManualCartasScreen()),
-                );
-              }),
-              SizedBox(height: 50),
-            ],
+      body: Stack(children: [
+        Container(
+          decoration: BoxDecoration(
+            color: ConstColors.dark,
+            image: DecorationImage(
+              image: AssetImage('assets/img/bg1.png'),
+              fit: BoxFit.cover,
+            ),
           ),
         ),
-      ),
+        SingleChildScrollView(
+          child: Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                SizedBox(height: 50),
+                _buildTarotCard(
+                    "Tiragem Aleatória", 'assets/img/tarot1.png', false, () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => TiragemAleatoriaScreen()),
+                  );
+                }),
+                SizedBox(height: 20),
+                _buildTarotCard("Ajuda da IA", 'assets/img/tarot2.png', true,
+                    () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => AjudaIAScreen()),
+                  );
+                }),
+                SizedBox(height: 20),
+                _buildTarotCard(
+                    "Manual Das Cartas", 'assets/img/tarot3.png', false, () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => ManualCartasScreen()),
+                  );
+                }),
+                SizedBox(height: 50),
+              ],
+            ),
+          ),
+        ),
+      ]),
     );
   }
 }

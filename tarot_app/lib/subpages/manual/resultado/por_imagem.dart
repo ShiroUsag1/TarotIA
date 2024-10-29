@@ -1,9 +1,9 @@
 import 'dart:convert'; // Adicione esta importação
 import 'dart:typed_data';
 import 'package:flutter/material.dart';
-import 'package:tarot_app/constants_Colors.dart';
-import 'package:tarot_app/models/cartas.dart';
-import 'package:tarot_app/models/mock_cartas.dart';
+import 'package:tarotia/constants_Colors.dart';
+import 'package:tarotia/models/cartas.dart';
+import 'package:tarotia/models/mock_cartas.dart';
 
 class BuscaImagemScreen extends StatefulWidget {
   @override

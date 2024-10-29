@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:http/http.dart' as http;
-import 'package:tarot_app/models/cartas.dart';
+import 'package:tarotia/models/cartas.dart';
 
 class ApiService {
   Future<List<CartaTarot>> fetchCartas() async {
