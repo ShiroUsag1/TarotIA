@@ -16,12 +16,11 @@ class JustifiedText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: double.infinity, // Ocupa toda a largura disponível
-      padding:
-          const EdgeInsets.symmetric(vertical: 8.0), // Espaçamento vertical
+      width: double.infinity,
+      padding: const EdgeInsets.symmetric(vertical: 8.0),
       child: Text(
         text,
-        textAlign: TextAlign.justify, // Justifica o texto
+        textAlign: TextAlign.justify,
         style: TextStyle(fontSize: fontSize, color: color),
       ),
     );

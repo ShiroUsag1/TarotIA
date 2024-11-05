@@ -1,4 +1,4 @@
-import 'dart:convert'; // Adicione esta importação
+import 'dart:convert';
 import 'dart:typed_data';
 import 'package:flutter/material.dart';
 import 'package:tarotia/constants_Colors.dart';
@@ -34,24 +34,23 @@ class BuscaImagemScreenState extends State<BuscaImagemScreen> {
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  // Verifica se a imagem é uma string base64 ou um caminho para asset
                   carta.imagemUrl.startsWith('data:image/')
                       ? Image.memory(
                           _getImageFromBase64(carta.imagemUrl),
                           fit: BoxFit.contain,
                           errorBuilder: (context, error, stackTrace) {
                             return Image.asset(
-                              'assets/img/tarot1.png', // Caminho do placeholder
+                              'assets/img/tarot1.png',
                               fit: BoxFit.contain,
                             );
                           },
                         )
                       : Image.asset(
-                          carta.imagemUrl, // Usa diretamente o caminho do asset
+                          carta.imagemUrl,
                           fit: BoxFit.contain,
                           errorBuilder: (context, error, stackTrace) {
                             return Image.asset(
-                              'assets/img/tarot1.png', // Caminho do placeholder
+                              'assets/img/tarot1.png',
                               fit: BoxFit.contain,
                             );
                           },
@@ -111,7 +110,6 @@ class BuscaImagemScreenState extends State<BuscaImagemScreen> {
   }
 
   Uint8List _getImageFromBase64(String base64String) {
-    // Remove o prefixo, se existir
     if (base64String.startsWith('data:image')) {
       base64String = base64String.split(',').last;
     }

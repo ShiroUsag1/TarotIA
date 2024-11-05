@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'constants_colors.dart';
-import 'dashboard_screen.dart'; // Importa a tela principal
+import 'dashboard_screen.dart';
 
 class IntroMain extends StatefulWidget {
   @override
@@ -45,7 +45,7 @@ class IntroMainState extends State<IntroMain> {
                   TextSpan(
                     text: 'Tarot',
                     style: TextStyle(
-                      fontFamily: 'AlexBrush', // Fonte para a primeira palavra
+                      fontFamily: 'AlexBrush',
                       fontSize: 100,
                       color: Colors.white,
                     ),
@@ -53,7 +53,7 @@ class IntroMainState extends State<IntroMain> {
                   TextSpan(
                     text: 'IA',
                     style: TextStyle(
-                      fontFamily: 'Roboto', // Fonte para a segunda palavra
+                      fontFamily: 'Roboto',
                       fontSize: 35,
                       color: Colors.white,
                     ),
@@ -72,7 +72,7 @@ class IntroMainState extends State<IntroMain> {
             ),
             SizedBox(height: 40),
             CircularProgressIndicator(
-              strokeWidth: 4.0, // Largura da borda
+              strokeWidth: 4.0,
               valueColor:
                   AlwaysStoppedAnimation<Color>(const Color(0xFFFFFFFF)),
             ),

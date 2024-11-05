@@ -122,8 +122,7 @@ class DashboardScreenState extends State<DashboardScreen>
                     "Tiragem Aleatória", 'assets/img/tarot1.png', false, () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(
-                        builder: (context) => TiragemAleatoriaScreen()),
+                    MaterialPageRoute(builder: (context) => TiragemScreen()),
                   );
                 }),
                 SizedBox(height: 20),

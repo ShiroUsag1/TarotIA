@@ -17,7 +17,7 @@ password_escaped = quote_plus(password)
 app = Flask(__name__)
 CORS(app)
 
-uri = f"mongodb+srv://{username_escaped}:{password_escaped}@{url_db}"
+uri = f"mongodb+srv:
 client = MongoClient(uri, server_api=ServerApi("1"))
 db = client["tarot_database"]
 cartas_collection = db["cartas"]
